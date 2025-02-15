@@ -49,12 +49,11 @@ namespace Cadastro_Estoque
         {
 
             Deletar novoFormulario = new Deletar();
-
-
             novoFormulario.Show();
-
-
             this.Hide();
         }
+
+
+        
     }
 }

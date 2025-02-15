@@ -38,12 +38,11 @@ namespace Cadastro_Estoque.DAO
         }
 
         //Metodo Deletar
-
         public void Delete(Itens itens)
         {
             try
             {
-                string sql = "DELETE FROM Itens WHERE id_itens = @id_itens";
+                string sql = "DELETE FROM itens WHERE id_itens = @id_itens";
                 MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
                 comando.Parameters.AddWithValue("@id_itens", itens.id_itens);
                 comando.ExecuteNonQuery();

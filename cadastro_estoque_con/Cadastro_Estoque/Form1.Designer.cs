@@ -181,6 +181,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Inserir";
             this.Text = "Inserir";
+        
             this.ResumeLayout(false);
             this.PerformLayout();
 

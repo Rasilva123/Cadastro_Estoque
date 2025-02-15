@@ -39,6 +39,7 @@
             // 
             // list_Itens
             // 
+            this.list_Itens.BackColor = System.Drawing.SystemColors.MenuBar;
             this.list_Itens.HideSelection = false;
             this.list_Itens.Location = new System.Drawing.Point(12, 60);
             this.list_Itens.Name = "list_Itens";
@@ -70,6 +71,7 @@
             this.BtExcluir.TabIndex = 3;
             this.BtExcluir.Text = "Excluir";
             this.BtExcluir.UseVisualStyleBackColor = true;
+            this.BtExcluir.Click += new System.EventHandler(this.BtExcluir_Click);
             // 
             // BtBuscar
             // 
@@ -101,6 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(328, 236);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtExcluir);
@@ -111,6 +114,7 @@
             this.Controls.Add(this.list_Itens);
             this.Name = "Deletar";
             this.Text = "Deletar";
+            this.Load += new System.EventHandler(this.Deletar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,12 +1,6 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Cadastro_Estoque.DAO;
+using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Cadastro_Estoque
@@ -30,10 +24,53 @@ namespace Cadastro_Estoque
             list_Itens.Columns.Add("Data Entrada", 100, HorizontalAlignment.Left);
             list_Itens.Columns.Add("Data Saida", 100, HorizontalAlignment.Left);
             list_Itens.Columns.Add("Valor", 100, HorizontalAlignment.Left);
-
-
         }
 
+        private void Deletar_Load(object sender, EventArgs e)
+        {
+            CarregarItens();
+        }
+
+        // metodo vai carregar todos itens que tiverem cadastrados
+        private void CarregarItens()
+        {
+            list_Itens.Items.Clear();
+
+            try
+            {
+                string sql = "SELECT * FROM itens";
+                MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
+
+                MySqlDataReader reader = comando.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string[] row =
+                    {
+                        reader.GetInt32(0).ToString(),
+                        reader.GetString(1),
+                        reader.GetString(2),
+                        reader.GetString(3),
+                        reader.GetDateTime(4).ToString(),
+                        reader.GetDateTime(5).ToString(),
+                        reader.GetDouble(6).ToString(),
+                    };
+
+                    var linha_listView = new ListViewItem(row);
+
+                    list_Itens.Items.Add(linha_listView);
+                }
+
+                reader.Close();
+                Conexao.FecharConexao();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar os itens: " + ex.Message);
+            }
+        }
+
+        // metodo ira mostra o item que vc quer por uma busca 
         private void BtBuscar_Click(object sender, EventArgs e)
         {
             try
@@ -57,7 +94,6 @@ namespace Cadastro_Estoque
                         reader.GetDateTime(4).ToString(),
                         reader.GetDateTime(5).ToString(),
                         reader.GetDouble(6).ToString(),
-                       
                     };
 
                     var linha_listView = new ListViewItem(row);
@@ -74,8 +110,24 @@ namespace Cadastro_Estoque
             }
         }
 
+        private void BtExcluir_Click(object sender, EventArgs e)
+        {
+            if (list_Itens.SelectedItems.Count > 0)
+            {
+                ListViewItem itemSelecionado = list_Itens.SelectedItems[0];
+                int id_itens = int.Parse(itemSelecionado.SubItems[0].Text);
+                Itens item = new Itens { id_itens = id_itens };
 
+                ItensDAO itensDAO = new ItensDAO();
+                itensDAO.Delete(item);
 
-
+                MessageBox.Show("Item deletado com sucesso!");
+                CarregarItens(); // Recarregar os itens após a exclusão
+            }
+            else
+            {
+                MessageBox.Show("Selecione um item para deletar.");
+            }
+        }
     }
 }
