@@ -100,26 +100,35 @@
   <ItemGroup>
     <Compile Include="Conexao.cs" />
     <Compile Include="DAO\ItensDAO.cs" />
-    <Compile Include="Deletar.cs">
+    <Compile Include="Buscar_Deletar_Excluir.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Deletar.Designer.cs">
-      <DependentUpon>Deletar.cs</DependentUpon>
+    <Compile Include="Buscar_Deletar_Excluir.Designer.cs">
+      <DependentUpon>Buscar_Deletar_Excluir.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Editar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Editar.Designer.cs">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inserir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inserir.Designer.cs">
+      <DependentUpon>Inserir.cs</DependentUpon>
     </Compile>
     <Compile Include="Itens.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Deletar.resx">
-      <DependentUpon>Deletar.cs</DependentUpon>
+    <EmbeddedResource Include="Buscar_Deletar_Excluir.resx">
+      <DependentUpon>Buscar_Deletar_Excluir.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Editar.resx">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inserir.resx">
+      <DependentUpon>Inserir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

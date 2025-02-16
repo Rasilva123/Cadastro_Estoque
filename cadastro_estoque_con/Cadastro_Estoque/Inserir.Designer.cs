@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtDadaEntrada = new System.Windows.Forms.TextBox();
+            this.txtDataEntrada = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtDataSaida = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -92,12 +92,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Modelo";
             // 
-            // txtDadaEntrada
+            // txtDataEntrada
             // 
-            this.txtDadaEntrada.Location = new System.Drawing.Point(203, 25);
-            this.txtDadaEntrada.Name = "txtDadaEntrada";
-            this.txtDadaEntrada.Size = new System.Drawing.Size(100, 20);
-            this.txtDadaEntrada.TabIndex = 7;
+            this.txtDataEntrada.Location = new System.Drawing.Point(203, 25);
+            this.txtDataEntrada.Name = "txtDataEntrada";
+            this.txtDataEntrada.Size = new System.Drawing.Size(100, 20);
+            this.txtDataEntrada.TabIndex = 7;
             // 
             // label4
             // 
@@ -171,7 +171,7 @@
             this.Controls.Add(this.btInsert);
             this.Controls.Add(this.txtDataSaida);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtDadaEntrada);
+            this.Controls.Add(this.txtDataEntrada);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.label3);
@@ -181,7 +181,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Inserir";
             this.Text = "Inserir";
-        
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,7 +194,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtDadaEntrada;
+        private System.Windows.Forms.TextBox txtDataEntrada;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtDataSaida;
         private System.Windows.Forms.Label label5;

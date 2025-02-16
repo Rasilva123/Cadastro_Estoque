@@ -13,6 +13,9 @@ namespace Cadastro_Estoque
 {
     public partial class Inserir : Form
     {
+        private int id_itens;
+
+   
         public Inserir()
         {
             InitializeComponent();
@@ -29,7 +32,7 @@ namespace Cadastro_Estoque
                     nome = txtNome.Text,
                     modelo = txtModelo.Text,
                     tipo = txtTipo.Text,
-                    dataEntrada = DateTime.Parse(txtDadaEntrada.Text),
+                    dataEntrada = DateTime.Parse(txtDataEntrada.Text),
                     dataSaida = DateTime.Parse(txtDataSaida.Text),
                     valor = double.Parse(txtValor.Text) 
                 };
@@ -48,7 +51,7 @@ namespace Cadastro_Estoque
         private void BtBuscar_Click(object sender, EventArgs e)
         {
 
-            Deletar novoFormulario = new Deletar();
+            Buscar_Deletar_Excluir novoFormulario = new Buscar_Deletar_Excluir();
             novoFormulario.Show();
             this.Hide();
         }

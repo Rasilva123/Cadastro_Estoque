@@ -14,27 +14,27 @@ namespace Cadastro_Estoque.DAO
         {
             try
             {
-                 string sql = "INSERT INTO itens (nome, modelo, tipo, dataEntrada, dataSaida, valor) " +
-                     "VALUES (@nome, @modelo,@tipo, @dataEntrada, @dataSaida, @valor)";
+                string sql = "INSERT INTO itens (nome, modelo, tipo, dataEntrada, dataSaida, valor) " +
+                    "VALUES (@nome, @modelo,@tipo, @dataEntrada, @dataSaida, @valor)";
 
-                 MySqlCommand comando = new MySqlCommand(sql,Conexao.Conectar());
-                 comando.Parameters.AddWithValue("@nome", itens.nome);
-                 comando.Parameters.AddWithValue("@modelo", itens.modelo);
-                 comando.Parameters.AddWithValue("@tipo", itens.tipo);
-                 comando.Parameters.AddWithValue("@dataEntrada", itens.dataEntrada);
-                 comando.Parameters.AddWithValue("@dataSaida", itens.dataSaida);
-                 comando.Parameters.AddWithValue("@valor", Convert.ToDouble(itens.valor));
+                MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
+                comando.Parameters.AddWithValue("@nome", itens.nome);
+                comando.Parameters.AddWithValue("@modelo", itens.modelo);
+                comando.Parameters.AddWithValue("@tipo", itens.tipo);
+                comando.Parameters.AddWithValue("@dataEntrada", itens.dataEntrada);
+                comando.Parameters.AddWithValue("@dataSaida", itens.dataSaida);
+                comando.Parameters.AddWithValue("@valor", Convert.ToDouble(itens.valor));
 
                 comando.ExecuteNonQuery();
                 Conexao.FecharConexao();
-                
+
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Erro ao cadastrar o Itens: " +ex.Message);
+                throw new Exception("Erro ao cadastrar o Itens: " + ex.Message);
             }
-           
+
         }
 
         //Metodo Deletar
@@ -47,15 +47,41 @@ namespace Cadastro_Estoque.DAO
                 comando.Parameters.AddWithValue("@id_itens", itens.id_itens);
                 comando.ExecuteNonQuery();
                 Conexao.FecharConexao();
-                
+
             }
             catch (Exception ex)
             {
 
                 throw new Exception($"Erro ao Deletar o Item!! {ex.Message}");
             }
-        
+
         }
-        
+
+        //Metodo Update
+
+        public void Update(Itens itens)
+        {
+            try
+            {
+                string sql = "UPDATE itens SET nome = @nome, modelo = @modelo, tipo = @tipo, " +
+                             "dataEntrada = @dataEntrada, dataSaida = @dataSaida, valor = @valor WHERE id_itens = @id_itens";
+                MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
+                comando.Parameters.AddWithValue("@nome", itens.nome);
+                comando.Parameters.AddWithValue("@modelo", itens.modelo);
+                comando.Parameters.AddWithValue("@tipo", itens.tipo);
+                comando.Parameters.AddWithValue("@dataEntrada", itens.dataEntrada);
+                comando.Parameters.AddWithValue("@dataSaida", itens.dataSaida);
+                comando.Parameters.AddWithValue("@valor", Convert.ToDouble(itens.valor));
+                comando.Parameters.AddWithValue("@id_itens", itens.id_itens); // Adicionando o parâmetro id_itens
+
+                comando.ExecuteNonQuery();
+                Conexao.FecharConexao();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao Editar o Item!! {ex.Message}");
+            }
+
+        }
     }
 }

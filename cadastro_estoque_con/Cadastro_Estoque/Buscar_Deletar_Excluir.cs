@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace Cadastro_Estoque
 {
-    public partial class Deletar : Form
+    public partial class Buscar_Deletar_Excluir : Form
     {
-        public Deletar()
+        public Buscar_Deletar_Excluir()
         {
             InitializeComponent();
 
@@ -17,6 +17,7 @@ namespace Cadastro_Estoque
             list_Itens.FullRowSelect = true;
             list_Itens.GridLines = true;
 
+            // definira o tamanho da coluna dos itens e tambem em que lado ficaram
             list_Itens.Columns.Add("ID", 30, HorizontalAlignment.Left);
             list_Itens.Columns.Add("Nome", 100, HorizontalAlignment.Left);
             list_Itens.Columns.Add("Modelo", 100, HorizontalAlignment.Left);
@@ -110,6 +111,7 @@ namespace Cadastro_Estoque
             }
         }
 
+        // metodo ira excluir o item que vc selecionar
         private void BtExcluir_Click(object sender, EventArgs e)
         {
             if (list_Itens.SelectedItems.Count > 0)
@@ -129,5 +131,35 @@ namespace Cadastro_Estoque
                 MessageBox.Show("Selecione um item para deletar.");
             }
         }
+
+        private void btEdit_Click(object sender, EventArgs e)
+        {
+            if (list_Itens.SelectedItems.Count > 0)
+            {
+                ListViewItem itemSelecionado = list_Itens.SelectedItems[0];
+                int id_itens = int.Parse(itemSelecionado.SubItems[0].Text);
+                string nomeItem = itemSelecionado.SubItems[1].Text;
+                string modeloItem = itemSelecionado.SubItems[2].Text;
+                string tipoItem = itemSelecionado.SubItems[3].Text;
+                DateTime dataEntradaItem = DateTime.Parse(itemSelecionado.SubItems[4].Text);
+                DateTime dataSaidaItem = DateTime.Parse(itemSelecionado.SubItems[5].Text);
+                double valorItem = double.Parse(itemSelecionado.SubItems[6].Text);
+
+                // Abre um novo formulário de edição e passa o ID e o nome do item selecionado
+                Editar formEditar = new Editar(id_itens, nomeItem, modeloItem, tipoItem,dataEntradaItem, dataSaidaItem, valorItem);
+                if (formEditar.ShowDialog() == DialogResult.OK)
+                {
+                    // Se a edição foi salva, atualiza a lista de itens
+                    CarregarItens();
+                    MessageBox.Show("Item atualizado com sucesso!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecione um item para editar.");
+            }
+        }
+
+       
     }
 }
