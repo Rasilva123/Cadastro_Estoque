@@ -159,7 +159,5 @@ namespace Cadastro_Estoque
                 MessageBox.Show("Selecione um item para editar.");
             }
         }
-
-       
     }
 }

@@ -42,7 +42,7 @@
             this.list_Itens.HideSelection = false;
             this.list_Itens.Location = new System.Drawing.Point(12, 60);
             this.list_Itens.Name = "list_Itens";
-            this.list_Itens.Size = new System.Drawing.Size(715, 209);
+            this.list_Itens.Size = new System.Drawing.Size(581, 164);
             this.list_Itens.TabIndex = 0;
             this.list_Itens.UseCompatibleStateImageBehavior = false;
             // 
@@ -55,7 +55,7 @@
             // 
             // BtExcluir
             // 
-            this.BtExcluir.Location = new System.Drawing.Point(593, 34);
+            this.BtExcluir.Location = new System.Drawing.Point(388, 31);
             this.BtExcluir.Name = "BtExcluir";
             this.BtExcluir.Size = new System.Drawing.Size(64, 23);
             this.BtExcluir.TabIndex = 3;
@@ -84,7 +84,7 @@
             // 
             // btEdit
             // 
-            this.btEdit.Location = new System.Drawing.Point(663, 34);
+            this.btEdit.Location = new System.Drawing.Point(471, 31);
             this.btEdit.Name = "btEdit";
             this.btEdit.Size = new System.Drawing.Size(64, 23);
             this.btEdit.TabIndex = 7;
@@ -97,7 +97,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(739, 281);
+            this.ClientSize = new System.Drawing.Size(605, 236);
             this.Controls.Add(this.btEdit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtBuscar);
