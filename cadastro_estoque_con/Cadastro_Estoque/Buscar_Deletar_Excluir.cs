@@ -17,14 +17,14 @@ namespace Cadastro_Estoque
             list_Itens.FullRowSelect = true;
             list_Itens.GridLines = true;
 
-            // definira o tamanho da coluna dos itens e tambem em que lado ficaram
+            // definir o tamanho das colunas dos itens e em que lado ficarão
             list_Itens.Columns.Add("ID", 30, HorizontalAlignment.Left);
             list_Itens.Columns.Add("Nome", 100, HorizontalAlignment.Left);
-            list_Itens.Columns.Add("Modelo", 100, HorizontalAlignment.Left);
+            list_Itens.Columns.Add("Descrição", 100, HorizontalAlignment.Left);
+            list_Itens.Columns.Add("Preço", 100, HorizontalAlignment.Left);
+            list_Itens.Columns.Add("Quantidade", 100, HorizontalAlignment.Left);
             list_Itens.Columns.Add("Tipo", 100, HorizontalAlignment.Left);
             list_Itens.Columns.Add("Data Entrada", 100, HorizontalAlignment.Left);
-            list_Itens.Columns.Add("Data Saida", 100, HorizontalAlignment.Left);
-            list_Itens.Columns.Add("Valor", 100, HorizontalAlignment.Left);
         }
 
         private void Deletar_Load(object sender, EventArgs e)
@@ -32,14 +32,14 @@ namespace Cadastro_Estoque
             CarregarItens();
         }
 
-        // metodo vai carregar todos itens que tiverem cadastrados
+        // metodo vai carregar todos os itens que estiverem cadastrados e tamebm ordenara pelo nome
         private void CarregarItens()
         {
             list_Itens.Items.Clear();
 
             try
             {
-                string sql = "SELECT * FROM itens";
+                string sql = "SELECT * FROM itens ORDER BY nome_item";
                 MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
 
                 MySqlDataReader reader = comando.ExecuteReader();
@@ -48,13 +48,13 @@ namespace Cadastro_Estoque
                 {
                     string[] row =
                     {
-                        reader.GetInt32(0).ToString(),
-                        reader.GetString(1),
-                        reader.GetString(2),
-                        reader.GetString(3),
-                        reader.GetDateTime(4).ToString(),
-                        reader.GetDateTime(5).ToString(),
-                        reader.GetDouble(6).ToString(),
+                        reader.GetInt32("id_item").ToString(),
+                        reader.GetString("nome_item"),
+                        reader.GetString("descricao_item"),
+                        reader.GetString("preco_item"),
+                        reader.GetInt32("quantidade_estoque").ToString(),
+                        reader.GetString("tipo_item"),
+                        reader.GetDateTime("data_entrada").ToString()
                     };
 
                     var linha_listView = new ListViewItem(row);
@@ -71,13 +71,13 @@ namespace Cadastro_Estoque
             }
         }
 
-        // metodo ira mostra o item que vc quer por uma busca 
+        // metodo irá mostrar o item que vc quer por uma busca 
         private void BtBuscar_Click(object sender, EventArgs e)
         {
             try
             {
                 string q = "'%" + txtBuscar.Text + "%'";
-                string sql = "SELECT * FROM itens WHERE nome LIKE " + q + " OR id_itens LIKE " + q;
+                string sql = "SELECT * FROM itens WHERE nome_item LIKE " + q + " OR id_item LIKE " + q;
                 MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
 
                 MySqlDataReader reader = comando.ExecuteReader();
@@ -88,13 +88,13 @@ namespace Cadastro_Estoque
                 {
                     string[] row =
                     {
-                        reader.GetInt32(0).ToString(),
-                        reader.GetString(1),
-                        reader.GetString(2),
-                        reader.GetString(3),
-                        reader.GetDateTime(4).ToString(),
-                        reader.GetDateTime(5).ToString(),
-                        reader.GetDouble(6).ToString(),
+                        reader.GetInt32("id_item").ToString(),
+                        reader.GetString("nome_item"),
+                        reader.GetString("descricao_item"),
+                        reader.GetString("preco_item"),
+                        reader.GetInt32("quantidade_estoque").ToString(),
+                        reader.GetString("tipo_item"),
+                        reader.GetDateTime("data_entrada").ToString()
                     };
 
                     var linha_listView = new ListViewItem(row);
@@ -107,18 +107,18 @@ namespace Cadastro_Estoque
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao Listar os itens: " + ex.Message);
+                MessageBox.Show("Erro ao listar os itens: " + ex.Message);
             }
         }
 
-        // metodo ira excluir o item que vc selecionar
+        // metodo irá excluir o item que vc selecionar
         private void BtExcluir_Click(object sender, EventArgs e)
         {
             if (list_Itens.SelectedItems.Count > 0)
             {
                 ListViewItem itemSelecionado = list_Itens.SelectedItems[0];
-                int id_itens = int.Parse(itemSelecionado.SubItems[0].Text);
-                Itens item = new Itens { id_itens = id_itens };
+                int id_item = int.Parse(itemSelecionado.SubItems[0].Text);
+                Itens item = new Itens { id_itens = id_item };
 
                 ItensDAO itensDAO = new ItensDAO();
                 itensDAO.Delete(item);
@@ -132,24 +132,24 @@ namespace Cadastro_Estoque
             }
         }
 
+        // metodo irá editar o item que vc selecionar 
         private void btEdit_Click(object sender, EventArgs e)
         {
             if (list_Itens.SelectedItems.Count > 0)
             {
                 ListViewItem itemSelecionado = list_Itens.SelectedItems[0];
-                int id_itens = int.Parse(itemSelecionado.SubItems[0].Text);
+                int id_item = int.Parse(itemSelecionado.SubItems[0].Text);
                 string nomeItem = itemSelecionado.SubItems[1].Text;
-                string modeloItem = itemSelecionado.SubItems[2].Text;
-                string tipoItem = itemSelecionado.SubItems[3].Text;
-                DateTime dataEntradaItem = DateTime.Parse(itemSelecionado.SubItems[4].Text);
-                DateTime dataSaidaItem = DateTime.Parse(itemSelecionado.SubItems[5].Text);
-                double valorItem = double.Parse(itemSelecionado.SubItems[6].Text);
+                string descricaoItem = itemSelecionado.SubItems[2].Text;
+                double valorItem = double.Parse(itemSelecionado.SubItems[3].Text);
+                int quantidadeEstoque = int.Parse(itemSelecionado.SubItems[4].Text);
+                string tipoItem = itemSelecionado.SubItems[5].Text;
+                DateTime dataEntradaItem = DateTime.Parse(itemSelecionado.SubItems[6].Text);
 
-                // Abre um novo formulário de edição e passa o ID e o nome do item selecionado
-                Editar formEditar = new Editar(id_itens, nomeItem, modeloItem, tipoItem,dataEntradaItem, dataSaidaItem, valorItem);
+                // Abre um novo formulário de edicao
+                Editar formEditar = new Editar(id_item, nomeItem, descricaoItem, quantidadeEstoque, tipoItem, dataEntradaItem, valorItem);
                 if (formEditar.ShowDialog() == DialogResult.OK)
                 {
-                    // Se a edição foi salva, atualiza a lista de itens
                     CarregarItens();
                     MessageBox.Show("Item atualizado com sucesso!");
                 }
@@ -158,6 +158,14 @@ namespace Cadastro_Estoque
             {
                 MessageBox.Show("Selecione um item para editar.");
             }
+        }
+
+        // metodo para voltar a tabela de inserção de dados 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Inserir novoFormulario = new Inserir();
+            novoFormulario.Show();
+            this.Hide();
         }
     }
 }

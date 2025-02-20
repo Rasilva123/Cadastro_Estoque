@@ -11,10 +11,10 @@ namespace Cadastro_Estoque
     {
         public int id_itens;
         public string nome;
-        public string modelo;
+        public string descricao;
         public string tipo;
+        public int quant_estoque;
         public DateTime dataEntrada;
-        public DateTime dataSaida;
         public double valor;
 
     }

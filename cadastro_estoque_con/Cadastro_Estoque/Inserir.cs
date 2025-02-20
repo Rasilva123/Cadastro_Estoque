@@ -15,48 +15,42 @@ namespace Cadastro_Estoque
     {
         private int id_itens;
 
-   
         public Inserir()
         {
             InitializeComponent();
         }
 
-        //Criação do comando Insert
-        private void btInsert_Click(object sender, EventArgs e)
+        // Criação do comando Inser
+
+        private void btInsert_Click_1(object sender, EventArgs e)
         {
             try
             {
-               
-                Itens novoiten = new Itens
+                Itens novoItem = new Itens
                 {
                     nome = txtNome.Text,
-                    modelo = txtModelo.Text,
-                    tipo = txtTipo.Text,
-                    dataEntrada = DateTime.Parse(txtDataEntrada.Text),
-                    dataSaida = DateTime.Parse(txtDataSaida.Text),
-                    valor = double.Parse(txtValor.Text) 
+                    descricao = txtDescricao.Text,
+                    valor = Double.Parse(txtValor.Text),
+                    quant_estoque = int.Parse(txtQuant.Text),
+                    tipo = cbtipo.Text,
+                    dataEntrada = DateTime.Parse(txtDataEntrada.Text)
                 };
 
-                ItensDAO intesdao = new ItensDAO();
-                intesdao.Salvar(novoiten);
+                ItensDAO itensDAO = new ItensDAO();
+                itensDAO.Salvar(novoItem);
                 MessageBox.Show("Item salvo com sucesso!");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao salvar o item: " + ex.Message);
             }
-
         }
 
-        private void BtBuscar_Click(object sender, EventArgs e)
+        private void BtBuscar_Click_1(object sender, EventArgs e)
         {
-
             Buscar_Deletar_Excluir novoFormulario = new Buscar_Deletar_Excluir();
             novoFormulario.Show();
             this.Hide();
         }
-
-
-        
     }
 }

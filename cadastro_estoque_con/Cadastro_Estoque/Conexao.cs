@@ -10,7 +10,7 @@ namespace Cadastro_Estoque
     internal static class Conexao
     {
         static MySqlConnection _conexao;
-        static string strconexao = "server=localhost; port=3306; uid=root; pwd=root; database=estoque ";
+        static string strconexao = "server=localhost; port=3306; uid=root; pwd=root; database=CadastroEstoqueOficina ";
 
         public static MySqlConnection Conectar()
         {

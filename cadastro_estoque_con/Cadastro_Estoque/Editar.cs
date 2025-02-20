@@ -6,70 +6,73 @@ namespace Cadastro_Estoque
 {
     public partial class Editar : Form
     {
-        public Editar()
+        private int id_itens;
+        private string nome;
+        private string descricao;
+        private string tipo;
+        private int quant;
+        private DateTime dataEntrada;
+        private double valor;
+
+
+        public Editar(int id_item, string nomeItem, string descricaoItem, int quantidadeEstoque, string tipoItem, DateTime dataEntradaItem, double valorItem)
         {
             InitializeComponent();
-        }
+            this.id_itens = id_item;
+            this.nome = nomeItem;
+            this.descricao = descricaoItem;
+            this.tipo = tipoItem;
+            this.quant = quantidadeEstoque;
+            this.dataEntrada = dataEntradaItem;
+            this.valor = valorItem;
 
-        public Editar(int id_itens, string nomeItem, string modeloItem, string tipoItem, DateTime dataEntrada, DateTime dataSaida, double valorItem)
-        {
-            InitializeComponent();
-            Id_itens = id_itens;
-            NomeItem = nomeItem;
-            ModeloItem = modeloItem;
-            TipoItem = tipoItem;
-            DataEntrada = dataEntrada;
-            DataSaida = dataSaida;
-            ValorItem = valorItem;
+            txtNome.Text = nomeItem;
+            txtDescricao.Text = descricaoItem;
+            cbtipo.Text = tipoItem;
+            txtQuant.Text = quantidadeEstoque.ToString();
+            txtDataEntrada.Text = dataEntrada.ToString();
+            txtValor.Text = valorItem.ToString();
 
-            // Inicializar os controles com os valores passados
-            txtNome.Text = NomeItem;
-            txtModelo.Text = ModeloItem;
-            txtTipo.Text = TipoItem;
-            txtDadaEntrada.Text = DataEntrada.ToString();
-            txtDataSaida.Text = DataSaida.ToString(); 
-            txtValor.Text = ValorItem.ToString();
-
-            // Adicionar mensagens de depuração
+  
             MessageBox.Show("Formulário carregado com sucesso. Valores iniciais:\n" +
-                            $"Nome: {NomeItem}\nModelo: {ModeloItem}\nTipo: {TipoItem}\n" +
-                            $"Data Entrada: {DataEntrada}\nData Saida: {DataSaida}\nValor: {ValorItem}");
+                            $"Nome: {nomeItem}\nDescrição: {descricaoItem}\nTipo: {tipoItem}\nQuantidade: {quantidadeEstoque}\n" +
+                            $"Data Entrada: {dataEntrada}\nValor: {valorItem}");
         }
 
-        public int Id_itens { get; }
-        public string NomeItem { get; }
-        public string ModeloItem { get; }
-        public string TipoItem { get; }
-        public DateTime DataEntrada { get; }
-        public DateTime DataSaida { get; }
-        public double ValorItem { get; }
-
-        private void btEditar_Click(object sender, EventArgs e)
+   
+        private void btEditar_Click_1(object sender, EventArgs e)
         {
-            string novoNome = txtNome.Text;
-            string novoModelo = txtModelo.Text;
-            string novoTipo = txtTipo.Text;
-            DateTime novaDataEntrada = Convert.ToDateTime(txtDadaEntrada.Text);
-            DateTime novaDataSaida = Convert.ToDateTime(txtDataSaida.Text);
-            double novoValor = double.Parse(txtValor.Text);
-
-            Itens item = new Itens
+            try
             {
-                id_itens = Id_itens,
-                nome = novoNome,
-                modelo = novoModelo,
-                tipo = novoTipo,
-                dataEntrada = novaDataEntrada,
-                dataSaida = novaDataSaida,
-                valor = novoValor
-            };
+                string novoNome = txtNome.Text;
+                string novaDescricao = txtDescricao.Text;
+                string novoTipo = cbtipo.Text;
+                int quant = Convert.ToInt32(txtQuant.Text);
+                DateTime novaDataEntrada = Convert.ToDateTime(txtDataEntrada.Text);
+                double novoValor = double.Parse(txtValor.Text);
 
-            ItensDAO itensDAO = new ItensDAO();
-            itensDAO.Update(item);
+                Itens item = new Itens
+                {
+                    id_itens = this.id_itens,
+                    nome = novoNome,
+                    descricao = novaDescricao,
+                    tipo = novoTipo,
+                    quant_estoque = quant,
+                    dataEntrada = novaDataEntrada,
+                    valor = novoValor
+                };
 
-            MessageBox.Show("Item atualizado com sucesso!");
-            this.DialogResult = DialogResult.OK; // Fecha o formulário e indica que a operação foi bem-sucedida
-            this.Close();
+                ItensDAO itensDAO = new ItensDAO();
+                itensDAO.Update(item);
+
+                MessageBox.Show("Item atualizado com sucesso!");
+                this.DialogResult = DialogResult.OK; 
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocorreu um erro ao atualizar o item: {ex.Message}");
+            }
         }
     }
 }
