@@ -1,45 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\",
+  "WorkspaceRootPath": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\cadastro_estoque\\inserir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\inserir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\cadastro_estoque\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\cadastro_estoque\\buscar_deletar_excluir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\buscar_deletar_excluir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|c:\\users\\rafaela\\onedrive - ifro.edu.br\\materias\\3 periodo\\poo\\cadastro_estoque_con\\cadastro_estoque\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\cadastro_estoque\\buscar_deletar_excluir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\buscar_deletar_excluir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|c:\\users\\rafaela\\onedrive - ifro.edu.br\\materias\\3 periodo\\poo\\cadastro_estoque_con\\cadastro_estoque\\editar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\editar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\cadastro_estoque\\inserir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\inserir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\cadastro_estoque\\dao\\itensdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\cadastro_estoque\\dao\\itensdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\dao\\itensdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\cadastro_estoque\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|c:\\users\\rafaela\\desktop\\cadastro_estoque_con\\cadastro_estoque\\buscar_deletar_excluir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\buscar_deletar_excluir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\cadastro_estoque\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\cadastro_estoque\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\cadastro_estoque\\editar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\editar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\cadastro_estoque\\inserir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\inserir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\cadastro_estoque\\buscar_deletar_excluir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\buscar_deletar_excluir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\cadastro_estoque\\inserir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\inserir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\cadastro_estoque\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\cadastro_estoque\\itens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\cadastro_estoque\\itens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A975CAC0-A3E1-418C-9527-80378D2ED7E3}|Cadastro_Estoque\\Cadastro_Estoque.csproj|solutionrelative:cadastro_estoque\\itens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,31 +50,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Inserir.cs",
-              "DocumentMoniker": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Inserir.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Inserir.cs",
               "RelativeDocumentMoniker": "Cadastro_Estoque\\Inserir.cs",
-              "ToolTip": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Inserir.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Inserir.cs",
               "RelativeToolTip": "Cadastro_Estoque\\Inserir.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAYwDIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T14:31:47.458Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "ItensDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\DAO\\ItensDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\DAO\\ItensDAO.cs",
               "RelativeDocumentMoniker": "Cadastro_Estoque\\DAO\\ItensDAO.cs",
-              "ToolTip": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\DAO\\ItensDAO.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\DAO\\ItensDAO.cs",
               "RelativeToolTip": "Cadastro_Estoque\\DAO\\ItensDAO.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAABgAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAADgvzQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T14:04:01.586Z",
               "IsPinned": true,
@@ -84,15 +83,14 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Conexao.cs",
-              "DocumentMoniker": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Conexao.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Conexao.cs",
               "RelativeDocumentMoniker": "Cadastro_Estoque\\Conexao.cs",
-              "ToolTip": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Conexao.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Conexao.cs",
               "RelativeToolTip": "Cadastro_Estoque\\Conexao.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAgwBAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T14:06:34.776Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -100,91 +98,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Editar.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Editar.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Editar.Designer.cs",
               "RelativeDocumentMoniker": "Cadastro_Estoque\\Editar.Designer.cs",
-              "ToolTip": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Editar.Designer.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Editar.Designer.cs",
               "RelativeToolTip": "Cadastro_Estoque\\Editar.Designer.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAD4v6sAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T21:02:32.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T21:02:32.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Buscar_Deletar_Excluir.cs",
-              "DocumentMoniker": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Buscar_Deletar_Excluir.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Buscar_Deletar_Excluir.cs",
               "RelativeDocumentMoniker": "Cadastro_Estoque\\Buscar_Deletar_Excluir.cs",
-              "ToolTip": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Buscar_Deletar_Excluir.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Buscar_Deletar_Excluir.cs",
               "RelativeToolTip": "Cadastro_Estoque\\Buscar_Deletar_Excluir.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAYwB8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T13:41:56.553Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Editar.cs",
-              "DocumentMoniker": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Editar.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Editar.cs",
               "RelativeDocumentMoniker": "Cadastro_Estoque\\Editar.cs",
-              "ToolTip": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Editar.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Editar.cs",
               "RelativeToolTip": "Cadastro_Estoque\\Editar.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAIwCgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAQwC0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T02:06:20.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T02:06:20.229Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Inserir.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Inserir.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Inserir.cs",
               "RelativeDocumentMoniker": "Cadastro_Estoque\\Inserir.cs",
-              "ToolTip": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Inserir.cs [Design]",
+              "ToolTip": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Inserir.cs [Design]",
               "RelativeToolTip": "Cadastro_Estoque\\Inserir.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T01:33:33.741Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-16T01:33:33.741Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Editar.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Editar.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Editar.cs",
               "RelativeDocumentMoniker": "Cadastro_Estoque\\Editar.cs",
-              "ToolTip": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Editar.cs [Design]",
+              "ToolTip": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Editar.cs [Design]",
               "RelativeToolTip": "Cadastro_Estoque\\Editar.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T01:33:23.613Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-16T01:33:23.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Buscar_Deletar_Excluir.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Buscar_Deletar_Excluir.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Buscar_Deletar_Excluir.cs",
               "RelativeDocumentMoniker": "Cadastro_Estoque\\Buscar_Deletar_Excluir.cs",
-              "ToolTip": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Buscar_Deletar_Excluir.cs [Design]",
+              "ToolTip": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Buscar_Deletar_Excluir.cs [Design]",
               "RelativeToolTip": "Cadastro_Estoque\\Buscar_Deletar_Excluir.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T20:51:45.732Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-14T20:51:45.732Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Itens.cs",
-              "DocumentMoniker": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Itens.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Itens.cs",
               "RelativeDocumentMoniker": "Cadastro_Estoque\\Itens.cs",
-              "ToolTip": "C:\\Users\\Rafaela\\OneDrive - ifro.edu.br\\Materias\\3 Periodo\\POO\\cadastro_estoque_con\\Cadastro_Estoque\\Itens.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Desktop\\cadastro_estoque_con\\Cadastro_Estoque\\Itens.cs",
               "RelativeToolTip": "Cadastro_Estoque\\Itens.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T14:30:44.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T14:30:44.122Z"
             }
           ]
         }
