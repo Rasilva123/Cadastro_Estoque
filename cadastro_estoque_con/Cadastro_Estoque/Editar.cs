@@ -30,7 +30,7 @@ namespace Cadastro_Estoque
             txtDescricao.Text = descricaoItem;
             cbtipo.Text = tipoItem;
             txtQuant.Text = quantidadeEstoque.ToString();
-            txtDataEntrada.Text = dataEntrada.ToString();
+            txtDataEntrada.Text = dataEntradaItem.ToString();
             txtValor.Text = valorItem.ToString();
 
   
@@ -39,7 +39,7 @@ namespace Cadastro_Estoque
                             $"Data Entrada: {dataEntrada}\nValor: {valorItem}");
         }
 
-   
+        
         private void btEditar_Click_1(object sender, EventArgs e)
         {
             try

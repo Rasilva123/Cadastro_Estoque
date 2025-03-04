@@ -43,7 +43,7 @@
             this.list_Itens.HideSelection = false;
             this.list_Itens.Location = new System.Drawing.Point(12, 60);
             this.list_Itens.Name = "list_Itens";
-            this.list_Itens.Size = new System.Drawing.Size(649, 164);
+            this.list_Itens.Size = new System.Drawing.Size(731, 164);
             this.list_Itens.TabIndex = 0;
             this.list_Itens.UseCompatibleStateImageBehavior = false;
             // 
@@ -57,7 +57,7 @@
             // BtExcluir
             // 
             this.BtExcluir.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.BtExcluir.Location = new System.Drawing.Point(456, 34);
+            this.BtExcluir.Location = new System.Drawing.Point(538, 34);
             this.BtExcluir.Name = "BtExcluir";
             this.BtExcluir.Size = new System.Drawing.Size(64, 23);
             this.BtExcluir.TabIndex = 3;
@@ -88,7 +88,7 @@
             // btEdit
             // 
             this.btEdit.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btEdit.Location = new System.Drawing.Point(526, 34);
+            this.btEdit.Location = new System.Drawing.Point(608, 34);
             this.btEdit.Name = "btEdit";
             this.btEdit.Size = new System.Drawing.Size(64, 23);
             this.btEdit.TabIndex = 7;
@@ -99,7 +99,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.Location = new System.Drawing.Point(597, 34);
+            this.button1.Location = new System.Drawing.Point(679, 34);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(64, 23);
             this.button1.TabIndex = 8;
@@ -112,7 +112,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(673, 230);
+            this.ClientSize = new System.Drawing.Size(767, 230);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btEdit);
             this.Controls.Add(this.label2);

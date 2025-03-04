@@ -118,6 +118,7 @@
     <Compile Include="Inserir.Designer.cs">
       <DependentUpon>Inserir.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\Interface1.cs" />
     <Compile Include="Itens.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -155,7 +156,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Interface\" />
     <Folder Include="Modelo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

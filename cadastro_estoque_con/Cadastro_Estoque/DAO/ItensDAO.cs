@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Cadastro_Estoque.Interface;
 using MySql.Data.MySqlClient;
 
 namespace Cadastro_Estoque.DAO
 {
-    internal class ItensDAO
+    internal class ItensDAO : Interface1<Itens>
     {
         // Método Salvar
         public void Salvar(Itens itens)

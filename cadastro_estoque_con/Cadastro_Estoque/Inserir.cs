@@ -21,7 +21,6 @@ namespace Cadastro_Estoque
         }
 
         // Criação do comando Insert
-
         private void btInsert_Click_1(object sender, EventArgs e)
         {
             try
