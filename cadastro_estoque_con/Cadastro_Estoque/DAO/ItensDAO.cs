@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace Cadastro_Estoque.DAO
@@ -14,6 +15,7 @@ namespace Cadastro_Estoque.DAO
         {
             try
             {
+                itens.FK_id_fornecedor = 1;
                 string sql = "INSERT INTO itens (nome_item, descricao_item, preco_item, quantidade_estoque, tipo_item, data_entrada) " +
                              "VALUES (@nome_item, @descricao_item, @preco_item, @quantidade_estoque, @tipo_item, @data_entrada)";
 
@@ -24,6 +26,7 @@ namespace Cadastro_Estoque.DAO
                 comando.Parameters.AddWithValue("@quantidade_estoque", itens.quant_estoque);
                 comando.Parameters.AddWithValue("@tipo_item", itens.tipo);
                 comando.Parameters.AddWithValue("@data_entrada", itens.dataEntrada);
+           
 
                 comando.ExecuteNonQuery();
                 Conexao.FecharConexao();
@@ -72,8 +75,10 @@ namespace Cadastro_Estoque.DAO
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro ao editar o item: " + ex.Message);
+                MessageBox.Show("Erro ao editar o item: " + ex.Message);
             }
         }
+
+
     }
 }

@@ -16,6 +16,7 @@ namespace Cadastro_Estoque
         public int quant_estoque;
         public DateTime dataEntrada;
         public double valor;
+        public int FK_id_fornecedor;
 
     }
 

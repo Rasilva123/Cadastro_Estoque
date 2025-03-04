@@ -20,7 +20,7 @@ namespace Cadastro_Estoque
             InitializeComponent();
         }
 
-        // Criação do comando Inser
+        // Criação do comando Insert
 
         private void btInsert_Click_1(object sender, EventArgs e)
         {
